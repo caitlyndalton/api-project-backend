@@ -20,3 +20,6 @@ Content-Type: application/json
   "github_url": "github_url",
   "photo": "photo"
 }
+
+### Students Show 
+GET {{host}}/students/2.json
