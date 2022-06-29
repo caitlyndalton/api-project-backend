@@ -1,0 +1,22 @@
+@host = http://localhost:3000
+
+### Students Index
+GET {{host}}/students.json
+
+### Students Create
+POST {{host}}/students.json
+Content-Type: application/json
+
+{
+  "first_name": "Test",
+  "last_name": "test",
+  "email": "test@gmail.com",
+  "phone_number": "8005555555",
+  "short_bio": "short bio",
+  "LinkedIn_URL": "LinkedIn_URL",
+  "twitter_handle": "@twitter_handle",
+  "personal_blog": "personal_blog",
+  "online_resume_url": "online_resume_url",
+  "github_url": "github_url",
+  "photo": "photo"
+}
