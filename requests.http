@@ -20,3 +20,34 @@ Content-Type: application/json
   "github_url": "github_url",
   "photo": "photo"
 }
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+ "email": "test@test.com",
+ "password": "password"
+}
+
+
+### Photos create
+POST http://localhost:3000/photos.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+Content-Type: application/json
+
+
+
+{
+"first_name": "Test name"
+"last_name": "Test lastname"
+"email": "Test@test.com"
+"phone_number": "73737467"
+"short_bio": "something" 
+"LinkedIn_URL": "test.LinkedIn_URL" 
+"twitter_handle": "@test" 
+"personal_blog": "something else" 
+"online_resume_url": " www.test.test" 
+"github_url": "test.github.com"
+"photo": "test.url" 
+}
