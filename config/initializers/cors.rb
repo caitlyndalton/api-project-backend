@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "localhost:8080", "chimerical-moxie-ad235a.netlify.app", "https://vocal-kitsune-8ea676.netlify.app"
+    origins "localhost:8080", "vocal-kitsune-8ea676.netlify.app", "chimerical-moxie-ad235a.netlify.app"
 
     resource "*",
       headers: :any,
