@@ -21,6 +21,7 @@ Content-Type: application/json
   "photo": "photo"
 }
 
+
 ### Sessions create (login)
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
@@ -51,3 +52,6 @@ Content-Type: application/json
 "github_url": "test.github.com"
 "photo": "test.url" 
 }
+### Students Show 
+GET {{host}}/students/2.json
+
