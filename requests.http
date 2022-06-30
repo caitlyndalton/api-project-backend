@@ -53,5 +53,22 @@ Content-Type: application/json
 "photo": "test.url" 
 }
 ### Students Show 
+<<<<<<< HEAD
 GET {{host}}/students/2.json
+
+
+GET {{host}}/students/4.json
+
+### Students Update
+PATCH {{host}}/students/4.json
+Content-Type: application/json
+
+{
+  "first_name": "test2",
+  "last_name": "test3",
+  "email": "newtest@gmail.com"
+}
+
+### Students Destroy
+DELETE {{host}}/students/5.json
 
