@@ -9,4 +9,7 @@ Student.create(first_name: "Adam", last_name: "Heckathorn", email: "ajheckathorn
 Student.create(first_name: "Caitlyn", last_name: "Dalton", email: "disconerds@gmail.com", phone_number: "678-752-1343", short_bio: "interesting description", LinkedIn_URL: "https://www.linkedin.com/in/caitlyn-dalton", twitter_handle: "@disco_nerds", personal_blog: "placeholder", online_resume_url: "placeholder", github_url: "https://github.com/caitlyndalton", photo: "placeholder")
 Student.create(first_name: "Nasser", last_name: "Alqutaim", email: "nasseralqutaim@gmail.com", phone_number: "473-315-9290", short_bio: "some text", LinkedIn_URL: "https://www.linkedin.com/in/nasserqutaim/", twitter_handle: "@jack", personal_blog: "placeholder", online_resume_url: "placeholder", github_url: "placeholder", photo: "placeholder")
 
+Education.create(start_date: "September 2022", end_date: "December 2024", degree: "Bachelor's", university_name: "University of Arkansas", details: "Ravishing details")
+
 Experience.create(start_date: "April 2022", end_date: "July 2022", job_title: "Software Developer", company_name: "Google", details: "example details")
+
