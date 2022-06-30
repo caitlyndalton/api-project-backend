@@ -1,4 +1,5 @@
 @host = http://localhost:3000
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTY2MzU3MjZ9.OByaZjg58fDUziKbsMls82IOXIaYM33tdD81NevDqtQ
 
 ### Students Index
 GET {{host}}/students.json
@@ -21,9 +22,18 @@ Content-Type: application/json
   "photo": "photo"
 }
 
+### Users Create (signup)
+POST {{host}}/users.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
 
 ### Sessions create (login)
-POST http://localhost:3000/sessions.json
+POST {{host}}/sessions.json
 Content-Type: application/json
 
 {
@@ -32,12 +42,10 @@ Content-Type: application/json
 }
 
 
-### Photos create
-POST http://localhost:3000/photos.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+### Students create
+POST {{host}}/students.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
-
-
 
 {
 "first_name": "Test name",
@@ -52,11 +60,10 @@ Content-Type: application/json
 "github_url": "test.github.com",
 "photo": "test.url" 
 }
+
 ### Students Show 
 GET {{host}}/students/2.json
 
-
-GET {{host}}/students/4.json
 
 ### Students Update
 PATCH {{host}}/students/4.json
